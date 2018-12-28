@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,23 +15,77 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Strava_Internship_iOS_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello World!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FMv-yc-1Ez">
-                                <rect key="frame" x="140" y="396" width="94" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="46T-c3-iuf">
+                                <rect key="frame" x="20" y="40" width="335" height="607"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="Ouz-68-7bS">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dylan's" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Go-gX-90f">
+                                                <rect key="frame" x="0.0" y="0.0" width="56" height="20.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="56" id="VcJ-5n-KnL"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="strava-logo-jpg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="9S5-av-vwt">
+                                                <rect key="frame" x="65" y="0.0" width="100" height="20.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="85w-FK-LmU"/>
+                                                    <constraint firstAttribute="height" constant="20.5" id="z6a-DZ-rcT"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Internship App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YpU-yg-YuA">
+                                                <rect key="frame" x="174" y="0.0" width="161" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20.5" id="qYO-JR-Cj4"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="qqG-Pg-ghQ">
+                                        <rect key="frame" x="0.0" y="20.5" width="335" height="586.5"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dylan_cunningham" translatesAutoresizingMaskIntoConstraints="NO" id="RMh-4w-SbO">
+                                                <rect key="frame" x="0.0" y="0.0" width="160.5" height="586.5"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahp-yF-FeS">
+                                                <rect key="frame" x="174.5" y="0.0" width="160.5" height="586.5"/>
+                                                <string key="text">My name is Dylan Cunningham, and I want to work at Strava for the 2019 summer internship program! I'm currently a sophomore at Stanford University studying Computer Science! I made this iOS app to share my excitement for this opportunity!</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="46T-c3-iuf" secondAttribute="trailing" constant="20" id="COd-Yw-AnQ"/>
+                            <constraint firstItem="46T-c3-iuf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="G4L-Ew-gG5"/>
+                            <constraint firstItem="46T-c3-iuf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="MRJ-pN-txh"/>
+                            <constraint firstAttribute="bottom" secondItem="46T-c3-iuf" secondAttribute="bottom" constant="20" id="cm6-1z-7xe"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="dylan_cunningham" width="3494" height="3024"/>
+        <image name="strava-logo-jpg.jpg" width="1202" height="250"/>
+    </resources>
 </document>
