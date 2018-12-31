@@ -9,13 +9,59 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    //Programming Skills Labels
     @IBOutlet weak var swiftLabel: UILabel!
     @IBOutlet weak var cLabel: UILabel!
     @IBOutlet weak var javaLabel: UILabel!
     @IBOutlet weak var cplusplusLabel: UILabel!
     @IBOutlet weak var htmlLabel: UILabel!
     @IBOutlet weak var cssLabel: UILabel!
+    
+    //Personal Project Descriptions
+    @IBOutlet weak var formDDescription: UILabel!
+    @IBOutlet weak var heapDescription: UILabel!
+    @IBOutlet weak var culturemeshDescription: UILabel!
+    
+    //Personal Project Buttons
+    @IBOutlet weak var formDBTN: UIButton!
+    @IBOutlet weak var heapBTN: UIButton!
+    @IBOutlet weak var cultureBTN: UIButton!
+    
+    /*This function controls the formD button to highlight the button and make the description visible
+      while also hiding the other descriptions. */
+    @IBAction func formD(_ sender: UIButton) {
+        formDDescription.isHidden = false
+        heapDescription.isHidden = true
+        culturemeshDescription.isHidden = true
+        
+        formDBTN.backgroundColor = UIColor(red: 255.0/255.0, green: 178.0/255.0, blue: 170.0/255.0, alpha: 1)
+        heapBTN.backgroundColor = UIColor(red: 154.0/255.0, green: 218.0/255.0, blue: 255.0/255.0, alpha: 1)
+        cultureBTN.backgroundColor = UIColor(red: 154.0/255.0, green: 218.0/255.0, blue: 255.0/255.0, alpha: 1)
+    }
+    
+    /*This function controls the Heap Allocator button to highlight the button and make the description visible while also hiding the other descriptions. */
+    @IBAction func heapAllocator(_ sender: UIButton) {
+        formDDescription.isHidden = true
+        heapDescription.isHidden = false
+        culturemeshDescription.isHidden = true
+    
+        formDBTN.backgroundColor = UIColor(red: 154.0/255.0, green: 218.0/255.0, blue: 255.0/255.0, alpha: 1)
+        heapBTN.backgroundColor = UIColor(red: 255.0/255.0, green: 178.0/255.0, blue: 170.0/255.0, alpha: 1)
+        cultureBTN.backgroundColor = UIColor(red: 154.0/255.0, green: 218.0/255.0, blue: 255.0/255.0, alpha: 1)
+    }
+    
+    /*This function controls the CultureMesh button to highlight the button and make the description visible
+     while also hiding the other descriptions. */
+    @IBAction func cultureMesh(_ sender: UIButton) {
+        formDDescription.isHidden = true
+        heapDescription.isHidden = true
+        culturemeshDescription.isHidden = false
+        
+        formDBTN.backgroundColor = UIColor(red: 154.0/255.0, green: 218.0/255.0, blue: 255.0/255.0, alpha: 1)
+        heapBTN.backgroundColor = UIColor(red: 154.0/255.0, green: 218.0/255.0, blue: 255.0/255.0, alpha: 1)
+        cultureBTN.backgroundColor = UIColor(red: 255.0/255.0, green: 178.0/255.0, blue: 170.0/255.0, alpha: 1)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +81,10 @@ class ViewController: UIViewController {
         cplusplusLabel.alpha = 0
         htmlLabel.alpha = 0
         cssLabel.alpha = 0
+        
+        formDBTN.layer.cornerRadius = 10
+        heapBTN.layer.cornerRadius = 10
+        cultureBTN.layer.cornerRadius = 10
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -88,4 +138,3 @@ class ViewController: UIViewController {
         cssLabel.layer.masksToBounds = true
     }
 }
-
