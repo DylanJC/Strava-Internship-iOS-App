@@ -1,6 +1,9 @@
 //
 //  ViewController.swift
 //  Strava Internship iOS App
+//  This is an iOS App I have built to apply to Strava's summer 2019 iOS software development
+//  internship program. The app has a few different sections describing my skills, experience,
+//  and fit with Strava.
 //
 //  Created by Dylan Cunningham on 12/27/18.
 //  Copyright © 2018 Dylan Cunningham. All rights reserved.
